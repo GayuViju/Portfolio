@@ -1,0 +1,226 @@
+body{
+    background-color: rgb(218, 215, 215);
+}
+nav ul{
+    list-style-type:none;
+    background-color: black;
+    color:white;
+    display:flex;
+    padding:10px;
+    margin-left:20px;
+    margin-right:20px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight:bold;   
+}
+nav ul li{
+    margin-right:20px;
+}
+nav ul li a:hover{
+ background-color: rgb(143, 143, 143);
+ padding: 5px;
+ border-radius: 5px;
+}
+@media(max-width:800px)
+{
+    nav ul {
+    flex-direction: column;
+    align-items: left;
+    padding:10px;
+    margin:0px;
+  }
+  nav ul li {
+    margin-bottom:5px;
+  }
+  nav ul li a{
+    padding:4px;
+    transition:display 0.3s ease;
+  }
+  nav ul li a:hover{
+    display: block;
+  }
+}
+
+#Home
+{
+  display: flex;
+  justify-content:stretch;
+  gap:50px;
+  margin-left:250px;
+  margin-right:250px;
+  align-items: center;
+  padding: 40px 20px;
+}
+h1{
+   text-align:center;
+   font-family:Open-Sans,sans-serif;
+   line-height: 50px;
+   font-size:50px;
+   padding-top:15px;
+   text-shadow:1px 5px 2px rgba(63, 79, 225, 0.883);
+} 
+#Home h2{
+    text-align:top;
+   font-size:50px;
+   text-shadow:5px 3px 5px rgba(215, 219, 220, 0.883);
+   margin-bottom:-10px;
+}
+#Home img{
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  border-style:solid;
+  box-shadow: 8px 8px 0.1px rgba(0,0,0,0.2);
+}
+.desgn p{
+    background-color:rgb(197, 196, 206);
+    display: flex;
+    padding:4px;
+    border-radius:15px;
+}
+@media(max-width:800px)
+{
+      #Home {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  #Home img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  }
+    h1{
+        text-align:center;
+         display:flex;
+    }
+}
+#About{
+    background-color:white;
+    margin:40px;
+    line-height:25px;
+    text-align: justify;
+    padding:20px;
+    border-radius:15px;
+}
+#skills button{
+    background-color:rgb(230, 228, 228);
+    border-style:solid;
+    cursor:pointer;
+    border-radius:5px;
+    padding:5px 15px;
+}
+#skills button:hover,#Viewmore:hover,#Viewmore a:hover{
+    background-color:rgb(45, 44, 44);
+    color:white;
+}
+.scroll
+{
+    display:flex;
+    justify-content:space-around;
+}
+#item
+{
+    color:rgb(0, 0, 0);
+    margin:20px;
+    background-color:rgb(255, 255, 255);
+    padding:20px;
+    border-radius:25px;
+}
+
+#item:hover {
+    transform: scale(1.05);
+  }
+#Contact{
+    background-color:white;
+    max-height: max-content;
+    max-width: max-content;
+    margin: 30px auto;
+    border-radius: 20px;
+    padding:20px 100px 10px 100px;
+}
+form{
+    background-color:rgb(210, 207, 207);
+    line-height:25px;
+    border-radius:15px;
+    padding:14px;
+}
+input,#submit{
+    height:30px;
+    width:250px;
+    border-radius:12px;
+    border-style: solid;
+}
+textarea{
+    height:80px;
+    width:250px;
+    border-radius:12px;
+}
+#submit{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    cursor:pointer;
+}
+#connect{
+    background-color:rgb(210, 207, 207);
+    border-radius:15px;
+    padding:10px;
+    max-height: max-content;
+    max-width: max-content;
+    margin:30px auto;
+}
+#connect a{
+  text-decoration:none;
+  color:rgb(0, 0, 0);
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.icon svg {
+  width: 30px;
+  height: 50px;
+}
+@media (max-width: 800px) {
+  .scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Contact {
+    margin: 20px auto; /* Removes large top space */
+    padding: 10px;
+  }
+
+  form {
+    margin: 10px auto;
+    padding: 20px;
+    align-items: center;
+  }
+
+  #connect {
+    margin: 10px auto; /* Removes large margin */
+    text-align: center;
+  }
+
+  input, #submit, textarea {
+    width: 90%;         /* Make inputs fit smaller screens */
+    max-width: 300px;
+  }
+}
+.copy{
+    margin-top:20px;
+    background-color: black;
+    color:white;
+    padding:2px;
+    text-align:center;
+}
